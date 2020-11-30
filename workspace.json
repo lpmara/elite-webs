@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "projects": {
+    "secue-web": {
+      "root": "apps/secue-web",
+      "sourceRoot": "apps/secue-web",
+      "projectType": "application",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/next:build",
+          "options": {
+            "root": "apps/secue-web",
+            "outputPath": "dist/apps/secue-web"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "secue-web:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "secue-web:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "builder": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "secue-web:build:production"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/secue-web/**/*.{ts,tsx}"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/secue-web/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "secue-web-e2e": {
+      "root": "apps/secue-web-e2e",
+      "sourceRoot": "apps/secue-web-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/secue-web-e2e/cypress.json",
+            "tsConfig": "apps/secue-web-e2e/tsconfig.e2e.json",
+            "devServerTarget": "secue-web:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "secue-web:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/secue-web-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/next"
+  },
+  "schematics": {
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      }
+    },
+    "@nrwl/next": {
+      "application": {
+        "style": "less",
+        "linter": "eslint"
+      }
+    }
+  },
+  "defaultProject": "secue-web"
+}
