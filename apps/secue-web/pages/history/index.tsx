@@ -101,6 +101,11 @@ export const Index = () => {
         </div>
         <div className={styles.ourPartnerContainer}>
           <div className={styles.titlePartner}>ผลงานของเรา</div>
+          <div className={styles.ImageContainer}>
+            {partnerImage.map(() => (
+              <div></div>
+            ))}
+          </div>
         </div>
       </div>
     </>
