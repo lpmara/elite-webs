@@ -7,73 +7,70 @@ import NavBar from '../../components/navbar';
 export const Index = () => {
   const partnerImage = [
     {
-      imagePath: '/images/partner/logo001.jpg',
+      imagePath: '/images/partner/logo001.png',
     },
     {
-      imagePath: '/images/partner/logo002.jpg',
+      imagePath: '/images/partner/logo002.png',
     },
     {
-      imagePath: '/images/partner/logo003.jpg',
+      imagePath: '/images/partner/logo003.png',
     },
     {
-      imagePath: '/images/partner/logo004.jpg',
+      imagePath: '/images/partner/logo004.png',
     },
     {
-      imagePath: '/images/partner/logo005.jpg',
+      imagePath: '/images/partner/logo005.png',
     },
     {
-      imagePath: '/images/partner/logo006.jpg',
+      imagePath: '/images/partner/logo006.png',
     },
     {
-      imagePath: '/images/partner/logo007.jpg',
+      imagePath: '/images/partner/logo007.png',
     },
     {
-      imagePath: '/images/partner/logo008.jpg',
+      imagePath: '/images/partner/logo008.png',
     },
     {
-      imagePath: '/images/partner/logo009.jpg',
+      imagePath: '/images/partner/logo009.png',
     },
     {
-      imagePath: '/images/partner/logo010.jpg',
+      imagePath: '/images/partner/logo010.png',
     },
     {
-      imagePath: '/images/partner/logo011.jpg',
+      imagePath: '/images/partner/logo011.png',
     },
     {
-      imagePath: '/images/partner/logo012.jpg',
+      imagePath: '/images/partner/logo012.png',
     },
     {
-      imagePath: '/images/partner/logo013.jpg',
+      imagePath: '/images/partner/logo013.png',
     },
     {
-      imagePath: '/images/partner/logo014.jpg',
+      imagePath: '/images/partner/logo014.png',
     },
     {
-      imagePath: '/images/partner/logo015.jpg',
+      imagePath: '/images/partner/logo015.png',
     },
     {
-      imagePath: '/images/partner/logo016.jpg',
+      imagePath: '/images/partner/logo016.png',
     },
     {
-      imagePath: '/images/partner/logo017.jpg',
+      imagePath: '/images/partner/logo017.png',
     },
     {
-      imagePath: '/images/partner/logo018.jpg',
+      imagePath: '/images/partner/logo018.png',
     },
     {
-      imagePath: '/images/partner/logo019.jpg',
+      imagePath: '/images/partner/logo019.png',
     },
     {
-      imagePath: '/images/partner/logo020.jpg',
+      imagePath: '/images/partner/logo020.png',
     },
     {
-      imagePath: '/images/partner/logo021.jpg',
+      imagePath: '/images/partner/logo021.png',
     },
     {
-      imagePath: '/images/partner/logo022.jpg',
-    },
-    {
-      imagePath: '/images/partner/logo023.jpg',
+      imagePath: '/images/partner/logo022.png',
     },
   ];
 
@@ -89,21 +86,17 @@ export const Index = () => {
           height={1080}
         />
         <div className={styles.historyTextContainer}>
-          <div className={styles.titleHistory}>ผลงานของเรา</div>
-          <div className={styles.detailHistory}>
-            <div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-            <div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-            <div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-            <div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-            <div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-            <div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
-          </div>
-        </div>
-        <div className={styles.ourPartnerContainer}>
-          <div className={styles.titlePartner}>ผลงานของเรา</div>
+          <div className={styles.titleHistory}>Our Partner</div>
           <div className={styles.ImageContainer}>
-            {partnerImage.map(() => (
-              <div></div>
+            {partnerImage.map((data, index) => (
+              <div key={index} className={styles.bannerImage}>
+                <Image
+                  src={data.imagePath}
+                  alt={'logo' + index}
+                  width={160}
+                  height={160}
+                />
+              </div>
             ))}
           </div>
         </div>
