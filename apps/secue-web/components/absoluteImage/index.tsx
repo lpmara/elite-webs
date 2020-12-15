@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './absoluteImage.less';
 import Image from 'next/image';
 
-
 export const Index = () => {
   return (
     <div className={styles.ContentTwoSize}>
@@ -23,19 +22,19 @@ export const Index = () => {
           </div>
           <div className={styles.rightSideContent}>
             <div className={styles.titleText}>
-                <div>Bodyguard VIP And Security Protection</div> 
-                {/* <div style={{paddingLeft: '15px'}}></div> */}
+              <div>Bodyguard VIP And Security Protection</div>
+              {/* <div style={{paddingLeft: '15px'}}></div> */}
             </div>
-              <div className={styles.detailText}>
-                <div className={styles.textDetail}>
-                    <Image
-                    alt={'Professional center image'}
-                    src={'/images/video1.png'}
-                    width={860}
-                    height={440}
+            <div className={styles.detailText}>
+              <div className={styles.textDetail}>
+                <Image
+                  alt={'Professional center image'}
+                  src={'/images/video1.png'}
+                  width={895}
+                  height={480}
                 />
-                </div>
               </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './navbar.less';
+import Link from 'next/link';
 export const Index = () => {
   return (
     <div className={styles.centerContainer}>
@@ -13,11 +14,32 @@ export const Index = () => {
             width={68}
             height={68}
           />
-          <div className={styles.TitleHome}>Home</div>
-          <div className={styles.TitleWork}>Our Partner</div>
-          <div className={styles.TitleWork}>Our Works</div>
-          <div className={styles.TitleContact}>Contact Us</div>
-          <div className={styles.TitleAbout}>About Us</div>
+          <Link href="/">
+            <span style={{ cursor: 'pointer' }}>
+              <div className={styles.TitleHome}>Home</div>
+            </span>
+          </Link>
+          <Link href="/our-partner">
+            <span style={{ cursor: 'pointer' }}>
+              <div className={styles.TitleWork}>Our Partner</div>
+            </span>
+          </Link>
+          <Link href="/our-service">
+            <span style={{ cursor: 'pointer' }}>
+              <div className={styles.TitleWork}>Our Works</div>
+            </span>
+          </Link>
+          <Link href="/contact-us">
+            <span style={{ cursor: 'pointer' }}>
+              <div className={styles.TitleContact}>Contact Us</div>
+            </span>
+          </Link>
+          <Link href="/aboute-us">
+            <span style={{ cursor: 'pointer' }}>
+              <div className={styles.TitleAbout}>About Us</div>
+            </span>
+          </Link>
+
           <Image
             className={styles.rightLogo}
             src="/images/logo2.png"

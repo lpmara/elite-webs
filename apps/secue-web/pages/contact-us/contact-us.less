@@ -1,0 +1,124 @@
+.MainContainer {
+  .topImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    min-height: 600px;
+    background-image: url(/images/contactus/top-bg2.jpg);
+    filter: grayscale();
+
+    .headerBannerContactUs {
+      margin-left: 10%;
+      padding-top: 300px;
+      .contactUsTitle {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 3.2vw;
+        margin-bottom: 20px;
+      }
+
+      .subTitle {
+        color: #d5d5d5;
+        font-size: 1vw;
+        font-weight: 200;
+
+        .callCenter {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .positionContactForm {
+    position: absolute;
+    width: 100%;
+    margin-top: 7%;
+    .formContactUsContainer {
+      max-width: 86%;
+      margin: 0px 7%;
+
+      .groupform {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+
+        .leftForm {
+          padding: 6% 7% 6% 7%;
+          width: 42%;
+          background-color: @color_primary_grey;
+          .formLeftcontainer {
+            color: #ffffff;
+
+            a {
+              color: #ffffff;
+            }
+
+            img {
+              width: 30px;
+            }
+
+            .gruopListContact {
+              border-bottom: 1px solid #696b70;
+              padding: 30px 0px;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-align-items: flex-start;
+              align-items: flex-start;
+
+              .contactText {
+                font-size: 1.3vw;
+                font-weight: 500;
+
+                .contactTextSub {
+                  font-size: 1vw;
+                  font-weight: 300;
+                }
+              }
+
+              .mapFirm {
+                margin-top: 10px;
+                font-size: 0.9vw;
+
+                a {
+                  color: @color_primary_green;
+                }
+              }
+
+              .lookMap {
+                color: #d6d6d6;
+                text-decoration: underline;
+                cursor: pointer;
+                display: inline;
+              }
+
+              .orlookMap {
+                // font-size: 2vw;
+                display: inline;
+              }
+
+              div:nth-child(1) {
+                width: 15%;
+              }
+
+              div:nth-child(2) {
+                width: 85%;
+                padding-top: 1%;
+              }
+            }
+
+            .taxID {
+              margin-top: 30px;
+              color: #cacaca;
+            }
+          }
+        }
+
+        .rightForm {
+          padding: 6% 8% 6% 8%;
+          width: 42%;
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+}

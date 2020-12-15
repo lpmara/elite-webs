@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from './history.less';
+import styles from './our-partner.less';
 import Layout from '../../components/layout';
 import NavBar from '../../components/navbar';
 // import '../public/styles/global.less';
