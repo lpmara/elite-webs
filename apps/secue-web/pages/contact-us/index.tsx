@@ -11,13 +11,12 @@ export const Index = () => {
           <div className={styles.headerBannerContactUs}>
             <div className={styles.contactUsTitle}>Contact</div>
             <div className={styles.subTitle}>
-              ต้องการข้อมูลเพิ่มเติมเกี่ยวกับการให้บริการ
-              สามารถติดต่อข้อมูลตามแบบฟอร์มด้านล่าง
+              xxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             </div>
             <div className={styles.subTitle}>
-              บริษัทฯ จะติดต่อกลับโดยเร็วที่สุด หรือโทรสอบถาม{' '}
+              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx{' '}
               <span className={styles.callCenter}>
-                Call center 02-00xx00000
+                xxxxxxxxxxxxxA xxxxxxxxxxx
               </span>
             </div>
           </div>
@@ -27,45 +26,23 @@ export const Index = () => {
             <div className={styles.groupform}>
               <div className={styles.leftForm}>
                 <div className={styles.formLeftcontainer}>
-                  <a href="tel:02-029-1200" className={styles.gruopListContact}>
-                    {/* <div><img src={phoneImage} alt="tel" /></div> */}
-                    <div className={styles.contactText}>02 029 1200</div>
-                  </a>
                   <div className={styles.gruopListContact}>
-                    {/* <div><img src={lineImage} alt="line" /></div> */}
                     <div className={styles.contactText}>
-                      <a
-                        href={'https://line.me/ti/p/@itopplus'}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        @itopplus
-                      </a>
+                      <div>(+66) 99 496 xxxx (Mr.ken)</div>
+                      <div>(+66) 82 283 xxxx (Mr.ken)</div>
                     </div>
                   </div>
                   <div className={styles.gruopListContact}>
-                    {/* <div><img src={mailImage} alt="mail" /></div> */}
+                    <div className={styles.contactText}>Line: TeamKen.xxx</div>
+                  </div>
+                  <div className={styles.gruopListContact}>
                     <div className={styles.contactText}>
-                      <a
-                        href={
-                          'mailto:contact@itopplus.com?subject=Please type your topic...'
-                        }
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        Contact@itopplus.com
-                      </a>
+                      We chat: wxid_y00g2dxxxxxxxx
                     </div>
                   </div>
                   <div className={styles.gruopListContact}>
-                    {/* <div><img src={placeImage} alt="place" /></div> */}
                     <div className={styles.contactText}>
-                      บริษัท ไอท้อปพลัส จำกัด{' '}
-                      <span className={styles.contactTextSub}>
-                        <br />
-                        89 อาคารเอไอเอ แคปปิตอล เซ็นเตอร์ ชั้น 32 ห้อง 3204-3207
-                        ถนนรัชดาภิเษก แขวงดินแดง เขตดินแดง กรุงเทพฯ 10400
-                      </span>
+                      Email: Contact@xxxxxxx.com
                     </div>
                   </div>
                   <div className={styles.taxID}>
@@ -73,7 +50,6 @@ export const Index = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.rightForm}>{/* <FormRight /> */}</div>
             </div>
           </div>
         </div>
