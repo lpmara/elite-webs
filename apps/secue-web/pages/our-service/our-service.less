@@ -1,11 +1,34 @@
 .MainContainer {
   width: 100%;
-  background: url('/images/backg1.jpg');
+  // background: url('/images/backg1.jpg');
   height: 100%;
+  .bannerConainer {
+    background: url('/images/231983.jpg');
+    background-attachment: fixed;
+    height: 360px;
+  }
   .flexContainer {
-    width: 1380px;
+    width: 1440px;
     margin: 0 auto;
-    background-color: black;
-    height: 999px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .titleName {
+      text-align: center;
+      font-size: 48px;
+      font-weight: 500;
+      padding-bottom: 50px;
+    }
+    .firstContent {
+      display: flex;
+      justify-content: space-around;
+      .contentTextMain {
+        width: 50%;
+      }
+      .contentImageMain {
+        width: 30%;
+      }
+    }
+
+    // background-color: yellow;
   }
 }
