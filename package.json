@@ -5,9 +5,11 @@
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
-    "build": "npm --prefix secue-web run build",
+    "build": "nx build",
+    "build:secue-web": "nx build --prefix secue-web",
     "export": "nx export",
     "deploy": "npm run build && npm run export",
+    "deploy:secue-web": "npm run build:secue-web && npm run export",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
     "e2e": "nx e2e",
