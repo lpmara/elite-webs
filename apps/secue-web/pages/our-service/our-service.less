@@ -1,17 +1,19 @@
 .MainContainer {
   width: 100%;
-  // background: url('/images/backg1.jpg');
+  background: black;
   height: 100%;
   .bannerConainer {
     background: url('/images/231983.jpg');
     background-attachment: fixed;
     height: 360px;
+    // background-size: cover;
   }
   .flexContainer {
     width: 1440px;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
+    color: whitesmoke;
     .titleName {
       text-align: center;
       font-size: 48px;
@@ -20,12 +22,40 @@
     }
     .firstContent {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       .contentTextMain {
-        width: 50%;
+        font-size: 28px;
+        width: 70%;
+        .divPadding {
+          padding-bottom: 30px;
+        }
       }
       .contentImageMain {
         width: 30%;
+        img{
+          margin-top: 30px;
+        }
+      }
+    }
+    .secondContent {
+      display: flex;
+      justify-content: space-between;
+      .contentImageMain {
+        width: 35%;
+        img{
+          margin-top: 50px;
+        }
+      }
+      .gapCenter {
+        width: 5%;
+
+      }
+      .contentTextMain {
+        font-size: 28px;
+        width: 60%;
+        .divPadding {
+          padding-bottom: 30px;
+        }
       }
     }
 

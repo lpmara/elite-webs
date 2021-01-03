@@ -53,7 +53,7 @@ export const Index = () => {
                 <div className={styles.TitleContact}>Contact Us</div>
               </span>
             </Link>
-            <Link href="/aboute-us">
+            <Link href="/about-us">
               <span style={{ cursor: 'pointer' }}>
                 <div className={styles.TitleAbout}>About Us</div>
               </span>

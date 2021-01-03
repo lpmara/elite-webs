@@ -77,30 +77,33 @@ export const Index = () => {
   return (
     <>
       <NavBar />
-      <div className={styles.MainContainer}>
-        <Image
-          className={styles.bannerImage}
-          src="/images/soldier-army2.jpg"
-          alt="secue-logo2"
-          width={1920}
-          height={1080}
-        />
-        <div className={styles.historyTextContainer}>
-          <div className={styles.titleHistory}>Our Partner</div>
-          <div className={styles.ImageContainer}>
-            {partnerImage.map((data, index) => (
-              <div key={index} className={styles.bannerImage}>
-                <Image
-                  src={data.imagePath}
-                  alt={'logo' + index}
-                  width={160}
-                  height={160}
-                />
-              </div>
-            ))}
+      <div className={styles.percentClass}>
+        <div className={styles.MainContainer}>
+          <Image
+            className={styles.bannerImage}
+            src="/images/soldier-army2.jpg"
+            alt="secue-logo2"
+            width={1920}
+            height={1080}
+          />
+          <div className={styles.historyTextContainer}>
+            <div className={styles.titleHistory}>Our Partner</div>
+            <div className={styles.ImageContainer}>
+              {partnerImage.map((data, index) => (
+                <div key={index} className={styles.bannerImage}>
+                  <Image
+                    src={data.imagePath}
+                    alt={'logo' + index}
+                    width={160}
+                    height={160}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
+
     </>
   );
 };

@@ -8,7 +8,7 @@ export const Index = () => {
     {
       imagePath: '/images/our-service/232016.jpg',
       title: 'Personal Security Service',
-      titleColor: '#c51f25',
+      titleColor: 'whitesmoke',
       detail1:
         'xxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxx xxxxxxxxxx xxxxxxxxxxxxxxx xxxxxx xxxxxxxxxxxxxxxxxxx xxxxxx xxxxxxxxxxxxxx',
       detail2:
@@ -26,7 +26,20 @@ export const Index = () => {
           <ImageSwitch ImageSwitch={ImageSwitchSide[0]} />
           <div className={styles.firstContent}>
             <div className={styles.contentTextMain}>
-              1. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              <div className={styles.divPadding}>
+                  1. ดูแลความปลอดภัย ขั้นต่ำถึงสูงสุด มีบริการตั้งแต่ 10 ชั่วโมง - 24 ชั่วโมง
+              </div>
+              <div className={styles.divPadding}>
+                <div>2. รับทำงานทั้งนอกเครื่องแบบ และ ในเครื่องแบบ</div>
+                <div>&nbsp;&nbsp;&nbsp;(สามารถปรับเปลี่ยนได้ตามสถานการณ์)</div>
+                   
+              </div>
+              <div className={styles.divPadding}>
+                  3. การทำงานแบบ มีอาวุธ และไม่มีอาวุธ (สามารถปรับเปลี่ยนได้ตามสถานการณ์)
+              </div>
+              <div className={styles.divPadding}>
+                  4. รับงานในลักษณะของ Secret Service
+              </div>
             </div>
             <div className={styles.contentImageMain}>
               <Image
@@ -37,6 +50,36 @@ export const Index = () => {
               />
             </div>
           </div>
+          <div className={styles.secondContent}>
+            <div className={styles.contentImageMain}>
+            <Image
+                alt={'Image1234'}
+                src={'/images/our-service/232002.jpg'}
+                width={1876}
+                height={872}
+              />
+            </div>
+            <div className={styles.gapCenter}></div>
+            <div className={styles.contentTextMain}>
+              <div className={styles.divPadding}>
+                5. สามารถจัดหา รถลีมูซีน เรือยอช เฮลิคอปเตอร์ และเครื่องบินส่วนตัว
+                </div>
+                <div className={styles.divPadding}>
+                6. มีบริการจัดหาที่พัก ตามความต้องการของลูกค้า
+                </div>
+                <div className={styles.divPadding}>
+                7. สามารถจัดหา Butler (Butler Service)
+                </div>
+                <div className={styles.divPadding}>
+                8. มีบริการบุคลากรที่ชำนาญการท่องเที่ยว และสถานที่ท่องเที่ยวต่าง
+                </div>
+                <div className={styles.divPadding}>
+                  <div>9. รับบริการทั้งในและนอกประเทศ Agent ทุกคนมีตราประจำตัว</div>
+                  <div>&nbsp;&nbsp;&nbsp;เรามี Partner อยู่ทั่วโลกคอยบริการท่าน </div>
+               
+                </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
@@ -44,3 +87,4 @@ export const Index = () => {
 };
 
 export default Index;
+
