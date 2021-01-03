@@ -5,7 +5,7 @@
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
-    "build": "nx build",
+    "build": "npm --prefix secue-web run build",
     "export": "nx export",
     "deploy": "npm run build && npm run export",
     "test": "nx test",
