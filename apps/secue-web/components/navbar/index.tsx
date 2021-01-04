@@ -58,6 +58,11 @@ export const Index = () => {
                 <div className={styles.TitleAbout}>About Us</div>
               </span>
             </Link>
+            <Link href="/join-us">
+              <span style={{ cursor: 'pointer' }}>
+                <div className={styles.TitleJoin}>Join Us</div>
+              </span>
+            </Link>
           </div>
         </div>
       </div>
